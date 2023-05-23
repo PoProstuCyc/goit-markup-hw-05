@@ -262,7 +262,6 @@ a.image_header {
   padding: 10px 41px 10px 42px;
 }
 .is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
