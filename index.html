@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-05</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,7 +70,15 @@
           <h1 class="main_text_index">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="button_index" type="button">ZAMÓW USŁUGĘ</button>
+          <button data-modal-open class="button_index" type="button">
+            ZAMÓW USŁUGĘ
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="text_order_service">
+              <button data-modal-close type="button">ZAMKNIJ OKNO</button>
+            </div>
+          </div>
+          <script src="modal.js"></script>
         </div>
       </section>
       <!-- nasze atuty -->
