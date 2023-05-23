@@ -33,6 +33,7 @@
   --background_color_items_portfolio: rgba(238, 238, 238, 1);
   --background_portfolio: rgba(255, 255, 255, 1);
   --color_item_portfolio: rgba(33, 33, 33, 1);
+  --background_text_projects_portfolio: rgba(33, 150, 243, 0.9);
 }
 
 /* style ogólne */
@@ -260,6 +261,38 @@ a.image_header {
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
 }
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.text_order_service {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: #fff;
+
+  transform: translate(-50%, -50%), scale(1);
+  transition: transform 0.6s ease-in;
+}
+.is-hidden .text_order_service {
+  transform: scale(0);
+}
 /* nasze umiejetności */
 .our_aces {
   background-color: var(--our_aces_color);
@@ -461,14 +494,16 @@ a.image_header {
   padding-bottom: 94px;
 }
 .projects_portfolio {
+  position: relative;
   background-color: var(--second_color);
   width: 370px;
+  overflow: hidden;
 }
-.projects_portfolio:hover {
+.animation_hidden_portfolio:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.projects_portfolio:focus {
+.animation_hidden_portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -488,4 +523,34 @@ a.image_header {
   border: 1px solid rgba(238, 238, 238, 1);
   border-top: 0;
   padding: 20px 24px;
+}
+.text_projects_portfolio {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18;
+  line-height: 1.555;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: var(--second_color);
+  background-color: var(--background_text_projects_portfolio);
+  padding: 49px 45px 49px 24px;
+  margin: 0px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+}
+.images_projects_portfolio {
+  width: 370px;
+  height: 294px;
+}
+.projects_portfolio > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.animation_hidden_portfolio:hover .text_projects_portfolio {
+  transform: translateY(0);
 }
