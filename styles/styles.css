@@ -397,6 +397,7 @@ a.image_header {
   padding: 16px 32px 30px 32px;
 }
 .social_media_developer {
+  display: block;
   fill: var(--color_social_media_our_team);
   height: 44px;
   width: 44px;
@@ -406,10 +407,12 @@ a.image_header {
 .social_media_developer:hover {
   fill: var(--second_color);
   background-color: var(--focus_hover_color);
+  border: none;
 }
 .social_media_developer:focus {
   fill: var(--second_color);
   background-color: var(--focus_hover_color);
+  border: none;
 }
 /* nasii klieni */
 .our_clients_header {
@@ -427,10 +430,7 @@ a.image_header {
   margin-bottom: 94px;
 }
 .our_clients_item {
-  height: 92px;
-  width: 170px;
-}
-.our_clients_logos {
+  display: block;
   height: 92px;
   width: 170px;
   padding: 16px 32px;
@@ -438,7 +438,11 @@ a.image_header {
   border-radius: 4px;
   fill: rgba(175, 177, 184, 1);
 }
-.our_clients_logos:hover {
+.our_clients_item:hover {
+  border-color: var(--focus_hover_color);
+  fill: var(--focus_hover_color);
+}
+.our_clients_item:focus {
   border-color: var(--focus_hover_color);
   fill: var(--focus_hover_color);
 }
