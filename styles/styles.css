@@ -213,6 +213,7 @@ a.image_header {
   gap: 10px;
 }
 .social_media_icon_footer {
+  display: block;
   fill: var(--second_color);
   background-color: rgba(255, 255, 255, 0.1);
   height: 44px;
@@ -224,7 +225,10 @@ a.image_header {
   background-color: var(--focus_hover_color);
   fill: var(--second_color);
 }
-
+.social_media_icon_footer:focus {
+  background-color: var(--focus_hover_color);
+  fill: var(--second_color);
+}
 /* style index */
 /* zamów usługę */
 .order_service {
