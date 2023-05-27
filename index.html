@@ -75,7 +75,11 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="text_order_service">
-              <button data-modal-close type="button">ZAMKNIJ OKNO</button>
+              <button data-modal-close class="close_window" type="button">
+                <svg width="18px" height="18px">
+                  <use href="images/icons.svg#img_close_window"></use>
+                </svg>
+              </button>
             </div>
           </div>
           <script src="modal.js"></script>
@@ -143,32 +147,32 @@
         <div class="container">
           <h2 class="what_we_do_header">Czym się zajmujemy</h2>
           <ul class="what_we_do_list">
-            <li>
+            <li class="what_we_do_pictures">
               <img
                 src="images/write.jpg"
                 alt="back-end"
                 width="370"
                 height="294"
               />
-              <p>Aplikacje komputerowe</p>
+              <p class="what_we_do_name">Aplikacje komputerowe</p>
             </li>
-            <li>
+            <li class="what_we_do_pictures">
               <img
                 src="images/computer.jpg"
                 alt="projektowanie aplikacji"
                 width="370"
                 height="294"
               />
-              <p>Aplikacje mobilne</p>
+              <p class="what_we_do_name">Aplikacje mobilne</p>
             </li>
-            <li>
+            <li class="what_we_do_pictures">
               <img
                 src="images/srcreen.jpg"
                 alt="front-end"
                 width="370"
                 height="294"
               />
-              <p>Aplikacje mobilne</p>
+              <p class="what_we_do_name">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
