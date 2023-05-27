@@ -25,6 +25,7 @@
   --color_icon_our_aces: rgba(245, 244, 250, 1);
   --color_social_media_our_team: rgba(175, 177, 184, 1);
   --color_our_clients_logos: rgba(175, 177, 184, 1);
+  --background_what_we_do_text: rgba(47, 48, 58, 0.8);
 
   /* kolory portfolio*/
   --color_type_item_portfolio: rgba(117, 117, 117, 1);
@@ -293,6 +294,13 @@ a.image_header {
 .is-hidden .text_order_service {
   transform: scale(0);
 }
+.close_window {
+  align-items: center;
+  border-color: rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 /* nasze umiejetności */
 .our_aces {
   background-color: var(--our_aces_color);
@@ -343,6 +351,26 @@ a.image_header {
 .what_we_do_list {
   display: flex;
   gap: 30px;
+}
+.what_we_do_pictures {
+  position: relative;
+  display: inline-flex;
+}
+.what_we_do_name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  background-color: var(--background_what_we_do_text);
+  color: var(--second_color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
 }
 /* znasz zespół */
 .our_team_header {
