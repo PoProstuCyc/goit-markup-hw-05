@@ -128,6 +128,9 @@ ul {
   border-radius: 4px;
   color: var(--focus_hover_color);
 }
+.color_nav {
+  color: var(--focus_hover_color);
+}
 .contacts_list {
   display: flex;
 }
