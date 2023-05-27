@@ -109,12 +109,23 @@ ul {
   padding: 32px 345px 32px 93px;
 }
 .navigate_buttons {
+  position: relative;
   color: var(--main_color);
 }
 .navigate_buttons:hover {
   color: var(--focus_hover_color);
 }
 .navigate_buttons:focus {
+  color: var(--focus_hover_color);
+}
+.navigate_buttons::after {
+  content: ;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  width: 53px;
+  height: 4px;
+  border-radius: 4px;
   color: var(--focus_hover_color);
 }
 .contacts_list {
