@@ -119,7 +119,7 @@ ul {
   color: var(--focus_hover_color);
 }
 .navigate_buttons::after {
-  content: ;
+  content: "";
   bottom: 0;
   position: absolute;
   display: block;
