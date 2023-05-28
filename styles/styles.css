@@ -303,7 +303,7 @@ a.image_header {
   top: 50%;
   left: 50%;
   background-color: #fff;
-  transform: translate(-50%, -50%), scale(1);
+  transform: translate(50%, 50%), scale(1);
   transition: transform 0.6s ease-in;
 }
 .is-hidden .text_order_service {
@@ -471,7 +471,6 @@ a.image_header {
   padding-bottom: 50px;
 }
 .our_clients_list {
-  item-align: center;
   display: flex;
   gap: 30px;
   margin-bottom: 94px;
@@ -569,7 +568,7 @@ a.image_header {
 .text_projects_portfolio {
   font-style: normal;
   font-weight: 400;
-  font-size: 18;
+  font-size: 18px;
   line-height: 1.555;
   position: absolute;
   top: 0;
