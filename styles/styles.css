@@ -39,6 +39,7 @@
 
 /* style ogólne */
 header {
+  position: relative;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 body {
@@ -111,14 +112,15 @@ ul {
 .navigate_buttons {
   position: relative;
   color: var(--main_color);
+  transition-property: background-color;
 }
-.navigate_buttons:hover {
-  color: var(--focus_hover_color);
-}
+.navigate_buttons:hover,
 .navigate_buttons:focus {
   color: var(--focus_hover_color);
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigate_buttons::after {
+.navigate_buttons_active::after {
   content: "";
   bottom: 0;
   position: absolute;
@@ -126,7 +128,7 @@ ul {
   width: 53px;
   height: 4px;
   border-radius: 4px;
-  color: var(--focus_hover_color);
+  background-color: var(--focus_hover_color);
 }
 .color_nav {
   color: var(--focus_hover_color);
@@ -134,13 +136,12 @@ ul {
 .contacts_list {
   display: flex;
 }
-a:hover.image_header {
-  fill: var(--focus_hover_color);
-  color: var(--focus_hover_color);
-}
+a:hover.image_header,
 a:focus.image_header {
   fill: var(--focus_hover_color);
   color: var(--focus_hover_color);
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 a.image_header {
   display: flex;
@@ -172,13 +173,12 @@ a.image_header {
   padding-bottom: 32px;
 }
 /* style stopki */
-.contacts_footer:hover {
-  color: var(--focus_hover_color);
-  border: none;
-}
+.contacts_footer:hover,
 .contacts_footer:focus {
   color: var(--focus_hover_color);
   border: none;
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo_footer {
   font-family: "Raleway";
@@ -210,6 +210,7 @@ a.image_header {
   font-size: 14px;
   line-height: 1.714;
   color: var(--mail_and_links_footer_color);
+  transition-property: background-color;
 }
 .social_media_footer {
   margin-top: -12px;
@@ -235,14 +236,14 @@ a.image_header {
   width: 44px;
   padding: 12px;
   border-radius: 50%;
+  transition-property: color;
 }
-.social_media_icon_footer:hover {
-  background-color: var(--focus_hover_color);
-  fill: var(--second_color);
-}
+.social_media_icon_footer:hover,
 .social_media_icon_footer:focus {
   background-color: var(--focus_hover_color);
   fill: var(--second_color);
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* style index */
 /* zamów usługę */
@@ -360,7 +361,8 @@ a.image_header {
   line-height: 1.166;
   color: var(--headers_color);
   text-align: center;
-  padding: 94px 409px 50px 409px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .what_we_do_list {
   display: flex;
@@ -449,16 +451,15 @@ a.image_header {
   width: 44px;
   border-radius: 50%;
   padding: 12px;
+  transition-property: color;
 }
-.social_media_developer:hover {
-  fill: var(--second_color);
-  background-color: var(--focus_hover_color);
-  border: none;
-}
+.social_media_developer:hover,
 .social_media_developer:focus {
   fill: var(--second_color);
   background-color: var(--focus_hover_color);
   border: none;
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* nasii klieni */
 .our_clients_header {
@@ -483,29 +484,25 @@ a.image_header {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: rgba(175, 177, 184, 1);
+  transition-property: color;
 }
-.our_clients_item:hover {
-  border-color: var(--focus_hover_color);
-  fill: var(--focus_hover_color);
-}
+.our_clients_item:hover,
 .our_clients_item:focus {
   border-color: var(--focus_hover_color);
   fill: var(--focus_hover_color);
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* style portfolio */
-.button_portfolio:hover {
-  background-color: var(--focus_hover_color);
-  color: var(--second_color);
-  border: none;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+.button_portfolio:hover,
 .button_portfolio:focus {
   background-color: var(--focus_hover_color);
   color: var(--second_color);
   border: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .background_portfolio {
   background-color: var(--background_portfolio);
@@ -525,13 +522,13 @@ a.image_header {
   border: none;
   cursor: pointer;
   padding: 6px 22px 6px 22px;
+  transition-property: color;
 }
 .card_list_portfolio {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
-
 .card_set_portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -545,13 +542,12 @@ a.image_header {
   width: 370px;
   overflow: hidden;
 }
-.animation_hidden_portfolio:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+.animation_hidden_portfolio:hover,
 .animation_hidden_portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name_item_portfolio {
   font-weight: 700;
@@ -585,7 +581,8 @@ a.image_header {
   padding: 49px 45px 49px 24px;
   margin: 0px;
   transform: translateY(100%);
-  transition: transform 0.3s ease-in;
+  transition: transform 250ms ease-in;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .images_projects_portfolio {
   width: 370px;
