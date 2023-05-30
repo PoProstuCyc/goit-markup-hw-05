@@ -50,8 +50,8 @@ body {
 }
 footer {
   background-color: var(--background_color_footer);
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 a {
   text-decoration: none;
@@ -182,21 +182,21 @@ a.image_header {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo_footer {
+  display: inline;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   color: var(--second_color);
-  margin-top: 60px;
 }
 .adress {
   width: 246px;
   padding-top: 20px;
-  row-gap: 9px;
 }
 .list_adress_footer {
   display: block;
+  gap: 9px;
 }
 .address_footer {
   font-style: normal;
@@ -215,7 +215,6 @@ a.image_header {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_media_footer {
-  margin-top: -12px;
   padding-left: 70px;
 }
 .join_us {
