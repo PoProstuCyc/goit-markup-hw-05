@@ -313,16 +313,19 @@ a.image_header {
   transform: scale(1);
   transition: transform 0.6s ease-in;
   transform: translate(-50%, -50%);
+  position: relative;
 }
 .is-hidden .text_order_service {
   transform: scale(0);
 }
 .close_window {
-  align-items: center;
+  position: absolute;
   border-color: rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  right: 0;
+  background-color: var(--second_color);
 }
 /* nasze umiejetności */
 .our_aces {
