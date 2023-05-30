@@ -115,14 +115,10 @@ ul {
 .navigate_buttons {
   position: relative;
   color: var(--main_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigate_buttons:hover,
 .navigate_buttons:focus {
   color: var(--focus_hover_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigate_buttons_active::after {
   content: "";
@@ -144,8 +140,8 @@ a:hover.image_header,
 a:focus.image_header {
   fill: var(--focus_hover_color);
   color: var(--focus_hover_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a.image_header {
   display: flex;
@@ -181,8 +177,8 @@ a.image_header {
 .contacts_footer:focus {
   color: var(--focus_hover_color);
   border: none;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo_footer {
   display: block;
@@ -216,8 +212,6 @@ a.image_header {
   font-size: 14px;
   line-height: 1.714;
   color: var(--mail_and_links_footer_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_media_footer {
   padding-left: 171px;
@@ -242,15 +236,13 @@ a.image_header {
   width: 44px;
   padding: 12px;
   border-radius: 50%;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_media_icon_footer:hover,
 .social_media_icon_footer:focus {
   background-color: var(--focus_hover_color);
   fill: var(--second_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* style index */
 /* zamów usługę */
@@ -464,16 +456,13 @@ a.image_header {
   width: 44px;
   border-radius: 50%;
   padding: 12px;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_media_developer:hover,
 .social_media_developer:focus {
   fill: var(--second_color);
   background-color: var(--focus_hover_color);
-  border: none;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* nasii klieni */
 .our_clients_header {
@@ -497,15 +486,13 @@ a.image_header {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: rgba(175, 177, 184, 1);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our_clients_item:hover,
 .our_clients_item:focus {
   border-color: var(--focus_hover_color);
   fill: var(--focus_hover_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* style portfolio */
 .button_portfolio:hover,
@@ -515,8 +502,6 @@ a.image_header {
   border: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .background_portfolio {
   background-color: var(--background_portfolio);
@@ -536,8 +521,6 @@ a.image_header {
   border: none;
   cursor: pointer;
   padding: 6px 22px 6px 22px;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card_list_portfolio {
   display: flex;
