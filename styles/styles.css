@@ -176,7 +176,6 @@ a.image_header {
 .contacts_footer:hover,
 .contacts_footer:focus {
   color: var(--focus_hover_color);
-  border: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -442,7 +441,6 @@ a.image_header {
   font-size: 16px;
   line-height: 1.1875;
   color: var(--profession_color);
-  border: none;
 }
 .social_media_developer_list {
   display: flex;
@@ -499,13 +497,11 @@ a.image_header {
 .button_portfolio:focus {
   background-color: var(--focus_hover_color);
   color: var(--second_color);
-  border: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .background_portfolio {
   background-color: var(--background_portfolio);
-  border: none;
 }
 .filters_portfolio {
   padding-top: 92px;
