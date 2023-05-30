@@ -57,7 +57,10 @@ footer {
 a {
   text-decoration: none;
 }
-
+button:hover {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 * {
   margin: 0;
   padding: 0;
@@ -113,8 +116,6 @@ ul {
 .navigate_buttons {
   position: relative;
   color: var(--main_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigate_buttons:hover,
 .navigate_buttons:focus {
@@ -214,8 +215,6 @@ a.image_header {
   font-size: 14px;
   line-height: 1.714;
   color: var(--mail_and_links_footer_color);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_media_footer {
   padding-left: 171px;
@@ -240,8 +239,6 @@ a.image_header {
   width: 44px;
   padding: 12px;
   border-radius: 50%;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_media_icon_footer:hover,
 .social_media_icon_footer:focus {
@@ -462,14 +459,11 @@ a.image_header {
   width: 44px;
   border-radius: 50%;
   padding: 12px;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_media_developer:hover,
 .social_media_developer:focus {
   fill: var(--second_color);
   background-color: var(--focus_hover_color);
-  border: none;
   transition: transform 250ms ease-in;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -495,8 +489,6 @@ a.image_header {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: rgba(175, 177, 184, 1);
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our_clients_item:hover,
 .our_clients_item:focus {
@@ -534,8 +526,6 @@ a.image_header {
   border: none;
   cursor: pointer;
   padding: 6px 22px 6px 22px;
-  transition: transform 250ms ease-in;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card_list_portfolio {
   display: flex;
